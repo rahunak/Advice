@@ -167,11 +167,11 @@ body {
             transform: rotate(360deg);
         }
     }
-.attribution{
-    position: fixed;
-    bottom: 5px;
-    left: 44%;
-}
+    .attribution{
+        position: fixed;
+        bottom: 5px;
+        left: 44%;
+    }
 }
 
 @media (min-width:1440px){
@@ -244,10 +244,10 @@ body {
         }
     }
  
-  .attribution{
-    position: fixed;
-    bottom: 5px;
-    left: 44%;
-}
+    .attribution{
+        position: fixed;
+        bottom: 5px;
+        left: 44%;
+    }
 
 }

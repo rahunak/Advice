@@ -16,16 +16,16 @@ function createAdwice(data) {
 let idAdvice = null;
 
 function getAdviceClickHandler() {
-  btnGetAdvice.disabled = true;
-  btnGetAdvice.classList.add("spin");
+  buttonGetAdvice.disabled = true;
+  buttonGetAdvice.classList.add("spin");
   
 
   getAdviceFromServer()
     .then(data => {
      
       createAdwice(data.slip)
-      btnGetAdvice.classList.remove("spin");
-      btnGetAdvice.disabled = false;
+      buttonGetAdvice.classList.remove("spin");
+      buttonGetAdvice.disabled = false;
       return data;
     })
     .catch(error=>console.log("error",error))
@@ -39,6 +39,6 @@ function loadFirstAdvice() {
   getAdviceClickHandler();
 }
 
-btnGetAdvice.addEventListener("click", getAdviceClickHandler);
+buttonGetAdvice.addEventListener("click", getAdviceClickHandler);
 
 document.addEventListener("DOMContentLoaded", loadFirstAdvice);
