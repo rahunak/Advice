@@ -1,5 +1,5 @@
 async function getAdviceFromServer() {
-  let response = await fetch('https://api.adviceslip.com/advice')
+  let response = await fetch('https://api.adviceslip.com/advice', {cache: 'no-store'})
   let data = await response.json();
   return data;
 }
